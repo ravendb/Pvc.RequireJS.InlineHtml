@@ -28,7 +28,7 @@ namespace PvcPlugins
         /// 
         /// </summary>
         /// <param name="output">The output stream name.</param>
-        /// <param name="moduleNameGetter">Function that takes a stream name and returns the module name. Default will be a function that returns "some\\folder\\foo.html" and returns "text!foo.html".</param>
+        /// <param name="moduleNameGetter">Function that takes a stream name and returns the module name. Default will be a function that takes "views\\foo.html" and returns "text!views\foo.html".</param>
         public PvcRequireJsInlineHtml(
             string output = "views_merged.js",
             Func<string, string> moduleNameGetter = null)
